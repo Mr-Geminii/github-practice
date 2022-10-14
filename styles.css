@@ -1,3 +1,26 @@
 body{
-    background-color: grey;
+    background-color: red;
+}
+
+h1 {
+    color: aqua;
+    text-align: center;
+}
+.column {
+    float: left;
+    width: 25%;
+    background-color: rgb(65, 101, 89);
+    font-size: 500px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
 }
