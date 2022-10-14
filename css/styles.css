@@ -1,0 +1,31 @@
+body{
+    background-color:olive;
+}
+
+h1 {
+    color: rgb(95, 166, 166);
+    text-align: center;
+}
+.column {
+    float: right;
+    width: 20%;
+    background-color: rgb(65, 101, 89);
+    text-align: center;
+    border: 2px black solid;
+    height: 50px;
+    border-radius: 5px;
+    
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+    
+}
+@media  screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
